@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+        <h2>Form</h2>
+
+        <form action= "https://dev.fare4z.com" method= "POST"
+        enctype="multipart/form-data" name="borang">
+
+        <label for= "Name">Full Name:</label>
+        <input type="text" id="Name" name = "Name" placeholder = 
+        "Enter your name">
+
+        <p>
+        <label for= "Katalaluan">Password:</label>
+        <input type="password" Name=Katalaluan placeholder = "Please setup your password">
+       </p>
+
+        <p>
+        <label for= "Email">Email:</label>
+        <input type="Email" Name=Email placeholder = "Please setup your Email">
+        </p>
+        
+        <p>
+        <label for= "Age">Age:</label>
+        <input type="number" Name=Age placeholder = "Please setup your Age">
+        </p>
+
+        <p>
+        <label for= "Date">Date:</label>
+        <input type="date" Name=Date placeholder = "Please setup your Date">
+        </p>
+
+        <p>
+        <label for= "Gander">Gander:</label>
+        <input type="radio" Name= "gender" value=" Male">Male
+        <input type="radio" Name= "gender" value=" Female">Female
+        </p>
+
+        <p>
+            <label for= "department">Department:</label>
+            <input type="checkbox" value="JTMK" name=" department[]">JTMK <br> 
+            <input type="checkbox" value="JP" name=" department[]">JP <br> 
+            <input type="checkbox" value="JKM" name=" department[]">JKM <br> 
+            <input type="checkbox" value="JKE" name=" department[]">JKE <br> 
+            </p>
+
+        <input type="text" name="roles" value="student">
+        <p>
+            <label for="Profile-Photo">Profile Photo:</label>
+            <input type=" file" name="uploadedFile">
+        </p>
+
+        <p>
+            <label for= "phone">Phone Number:</label>
+            <input type="text" value= "01111" readonl>
+        </p>
+
+        <p>
+            <label for= "country">Select Country:</label>
+            <select id= "country" name=" country">
+                <option value=" Malaysia"> Malaysia </option>
+                <option value=" United Kingdom"> UK </option>
+                <option value=" United State Amarica"> USA </option>
+            </select>
+        </p>
+
+        <p>
+            <label for= "message">Your Message:</label>
+            <textarea id= "message" name="message" rows="4" cols=" 30"></textarea>
+
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for ="fname">First Name:</label>
+                <input type=" text" id=" fname" name="fname">
+
+                <label for ="lname">Last Name:</label>
+                <input type=" text" id=" lname" name="lname">
+            </fieldset>
+        </p>
+        
+        <p>
+            <button type=" submit">Submit</button>
+        </p>
+
+</form>
+
+</body>
+</html>
