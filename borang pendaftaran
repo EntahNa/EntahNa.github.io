@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pendaftaran</title>
+</head>
+<body>
+        <h1>Borang Pendaftaran</h1>
+
+        <form action= "https://dev.fare4z.com" method= "POST"
+        enctype="multipart/form-data" name="borang">
+
+        <label for= "Name">Nama Peserta:</label>
+        <input type="text" id="Name" name = "Name" placeholder = 
+        "Enter your name">
+
+        <p>
+            <label for= "Kad">Number Kad Pengenalan:</label>
+            <input type="number" Name="Kad" placeholder = "Please setup your Number Kad Pengenalan">
+        </p>
+
+        <p>
+            <label for= "Date">Tarikh Lahir:</label>
+            <input type="date" Name=Date placeholder = "Please setup your Date">
+        </p>
+
+        <p>
+            <label for= "Age">Umur:</label>
+            <input type="number" Name=Age placeholder = "Please setup your Age">
+            </p>
+
+        <p>
+            <label for= "Gander">Gander:</label>
+            <input type="radio" Name= "gender" value=" Male">Male
+            <input type="radio" Name= "gender" value=" Female">Female
+        </p>
+
+        <p>
+        <label for= "Email">Email:</label>
+        <input type="Email" Name=Email placeholder = "Please setup your Email">
+        </p>
+
+        <p>
+            <label for= "phone">Phone Number:</label>
+            <input type="text" value= "01111" readonl>
+        </p>
+
+        <label for= "Alamat">Alamat Rumah:</label>
+        <input type="text" id="Alamat" name = "Alamat" placeholder = "Enter your Alamat rumah">
+
+        <p>
+            <label for= "status">--Sila Pilih--:</label>
+            <select id= "country" name=" country">
+                <option value=" Belajar"> Belajar </option>
+                <option value=" Tamat Belajar"> Tamat Belajar </option>
+            </select>
+        </p>
+
+        <p>
+            <label for= "department">Department:</label>
+            <input type="checkbox" value="HTML" name=" department[]">HTML <br> 
+            <input type="checkbox" value="CSS" name=" department[]">CSS <br> 
+            <input type="checkbox" value="PHP" name=" department[]">PHP <br> 
+            </p>
+        <p>
+            <label for="Profile-Photo">Profile Photo:</label>
+            <input type=" file" name="uploadedFile">
+        </p>
+
+        <p>
+            <label for= "Katalaluan">Kata Laluan:</label>
+            <input type="password" Name=Katalaluan placeholder = "Please setup your password">
+        </p>
+        
+        <p>
+            <button type=" submit">Submit</button>
+            <button type=" reset">kosongkan</button>
+        </p>
+</form>
+
+</body>
+</html>
