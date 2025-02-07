@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2><strong>Job Application</strong> </h2>
+
+    <form action="https://dev.fare4z.com" method="get" enctype="multipart/form-data" name="borang">
+
+        <label for="Name">Full Name:</label>
+        <input type="text" id="Name" name="name" placeholder="Enter your name">
+
+        <p>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="email">
+        </p>
+
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" value="">
+        </p>
+
+        <label for="Position">Position Applied for:</label>
+        <select name="position" id="Position">
+            <option value="CEO">CEO</option>
+            <option value="Manager">Manager</option>
+            <option value="Head">Head Department</option>
+        </select>
+
+        <p>
+            <label for="Date">Available Date:</label>
+            <input type="date" id="Date" name="date">
+        </p>
+
+        <p> 
+            <label for="Resume">Resume Upload:</label>
+            <input type="file" id="Resume" name="resume">
+        </p>
+
+        <p>
+            <label for="Cover">Cover latter:</label>
+            <textarea id="w3review" name="Cover latter" rows="4" cols="50">Why you want to work here.</textarea>
+        </p>
+        
+        <p>
+            <label for="Employment">Employment Type Preference:</label>
+            <input type="radio" name="employment_type" value="Full-time">Full-time
+            <input type="radio" name="employment_type" value="Part-time">Part-time
+            <input type="radio" name="employment_type" value="Internship">Internship
+        </p>
+
+        <div class="checkbox-group">
+            <label><strong>Skills:</strong><br></label>
+
+            <input type="checkbox" value="HTML" name="skill[]">HTML <br> 
+            <input type="checkbox" value="CSS" name="skill[]">CSS <br> 
+            <input type="checkbox" value="JavaScript" name="skill[]">JavaScript <br> 
+            <input type="checkbox" value="Python" name="skill[]">Python <br> 
+            <input type="checkbox" value="MySQL" name="skill[]">MySQL <br>
+        </div>
+
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
